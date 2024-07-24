@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đánh Giá</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Đánh Giá của Người Mua</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="contact.html">Liên hệ</a></li>
+                <li><a href="reviews.html">Đánh giá</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="reviews">
+            <h2>Nhận xét</h2>
+            <article class="review">
+                <h3>Nguyễn Văn A</h3>
+                <p>“Dự án bất động sản này thực sự tuyệt vời, không gian sống thoáng đãng và tiện nghi đầy đủ. Tôi rất hài lòng với quyết định đầu tư của mình.”</p>
+            </article>
+            <article class="review">
+                <h3>Trần Thị B</h3>
+                <p>“Tôi đã mua một căn hộ tại đây và rất hài lòng với chất lượng xây dựng cũng như dịch vụ hỗ trợ khách hàng. Một lựa chọn tuyệt vời cho gia đình.”</p>
+            </article>
+        </section>
+        <section id="submit-review">
+            <h2>Gửi Đánh Giá của Bạn</h2>
+            <form action="submit_review.php" method="post">
+                <label for="name">Họ và tên:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="review">Đánh giá:</label>
+                <textarea id="review" name="review" required></textarea>
+                <button type="submit">Gửi</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Dự Án Bất Động Sản. Mọi quyền được bảo lưu.</p>
+    </footer>
+</body>
+</html>
